@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src="https://kit.fontawesome.com/8033f8c30d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id = "header">
+        <div class="container">
+            <nav>
+                <img src ="images/yongj_logo_w.png" class ="logo">
+                <ul id ="sideMenu">
+                    <li><a href ="#header">Home</a></li>
+                    <li><a href ="#about">About</a></li>
+                    <li><a href ="#services">Strengths</a></li>
+                    <li><a href ="#portfolio">Projects</a></li>
+                    <li><a href ="#contact">Contact</a></li>
+                    <i class="fas fa-times" onClick = "closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onClick = "openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-End Developer</p>
+                <h1>Hi, I'm <span>Yongju</span> Lee <br> From South Korea</h1>
+            </div>
+            <br>
+            <br>
+            <div class ="btn-box">
+                <a href="#contact">Let's Talk</a>
+                <a href="images/downloads/CV.pdf">Download CV</a>
+            </div>
+        </div>
+    </div>
+<!-------about--------->
+
+    <div id="about">
+        <div class ="container">
+            <div class ="row">
+                <div class="about-col-1">
+                    <img src = "images/yong_back.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class ="sub-title">About Me</h1>
+                    <p>I am 4th years Honours Bachelor of Art Information Technology student with a focus in data structure, data algorithm, database, web technologies, user interface, and system administration.
+                        I am a quick learner and I am always looking to expand my knowledge and skill set.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class ="tab-links active-link" onClick ="openTab('skills')">Skills</p>
+                        <p class ="tab-links" onClick ="openTab('education')">Education</p>
+                        <p class ="tab-links" onClick ="openTab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id = "skills">
+                        <ul>                           
+                            <li><span>Web Development</span><br>Implementing Web Functions</li>
+                            <li><span>UX/UI</span><br>Creating a Prototype</li>
+                            <li><span>Langauges</span><br>
+                                HTML, CSS, JavaScript, React, PHP, SQL and Java
+                                <div class ="languages-list">
+                                    <div>
+                                        <i class="fa-brands fa-html5"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-brands fa-css3-alt"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-brands fa-js"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-brands fa-react"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-brands fa-php"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-database"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-brands fa-java"></i>
+                                    </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id = "education">
+                        <ul>
+                            <li><span>2022 - Present</span><br>Information Technology at York University</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id = "experience">
+                        <ul>
+                            <li><span>August 2023</span><br>Front-End Developer Volunteer at Dewi Superfoods</li>
+                            <li><span>2017 - 2019</span><br>Sous Chef at Dowon Restaurant</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+<!-- -------services--------- -->
+<div id ="services">
+    <div class = "container">
+        <h1 class ="sub-title">My Strengths</h1>
+        <div class ="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>I specialize in web development, proficient in HTML, CSS, and JavaScript. With a keen eye for design and a commitment to creating seamless user experiences, I bring technical expertise to transform ideas into dynamic and responsive websites.</p>
+                <a href="https://www.dewisuperfoods.com/product/pomegranate-powder"> Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-figma"></i>
+                <h2>UI/UX Design </h2>
+                <p>In the UI/UX course, I blend creativity with functionality to craft intuitive and visually appealing user interfaces. Proficient in prototyping, and user-centric design principles, I am dedicated to enhancing the overall user experience. Let's bring ideas to life through thoughtful and engaging design solutions.</p>
+                <a href="images/downloads/UI_UX_Course.pdf"> Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-people-group"></i>               
+                <h2>Team Work & Leadership</h2>
+                <p>
+                    In my role as a sous chef, I showcased strong leadership by managing tasks for a team of five to six employees during my boss's absence. Prioritizing responsibilities, I ensured timely execution and upheld superior customer service, contributing to operational efficiency. This experience has equipped me with effective leadership skills for any position.</p>
+                <a href="https://www.instagram.com/explore/locations/699341560/dowon-chinese-and-korean-restaurant/"> Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------portfolio--------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class ="sub-title">Projects</h1>
+        <div class="projects-list">
+            <div class="project">
+                <img src = "images/projects/fastFixProject.jpg" alt = "fastFixProject">
+                <div class = "layer">
+                    <h3>FastFixProject</h3>
+                    <p>How to replace Audi A4 Windshield Blades</p>
+                    <a href ="images/downloads/fastFixProject.pdf"><i class="fa-solid fa-eye"></i></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src = "images/projects/accidentReport.png" alt = "accidentReport">
+                <div class = "layer">
+                    <h3>Accident Report</h3>
+                    <p>The Accident Report about GTA VI Leaks</p>
+                    <a href ="images/downloads/accidentReport.pdf"><i class="fa-solid fa-eye"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src = "images/projects/dewi.png" alt = "dewi">
+                <div class = "layer">
+                    <h3>Multiple preview images</h3>
+                    <p>The preview function for an online shopping website using JavaScript</p>
+                    <a href ="https://www.dewisuperfoods.com/product/pomegranate-powder"><i class="fa-solid fa-eye"></i></a>
+                </div>
+            </div>   
+        </div>
+    <a href = "#" class = "btn">See more</a>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<!-- -------contact--------- -->
+<div id ="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class ="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> leel103196@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> +1 647-782-9792</p>
+                <div class="social-icons">
+                    <a href ="https://www.linkedin.com/in/yongju-lee-0018852a8/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href ="https://www.instagram.com/yong599/"><i class="fa-brands fa-square-instagram"></i></i></a>
+                    <a href ="https://www.facebook.com/profile.php?id=100006472489107"><i class="fa-brands fa-facebook"></i></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name ="submit-to-google-sheet">
+                    <input type="text" name ="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name ="Message" row="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id = "msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Yongju. Made with <i class="fa-solid fa-heart"></i> by GreatStack tutorial</p>
+    </div>
+</div>
+
+<script>
+    var tabLinks = document.getElementsByClassName("tab-links");
+    var tabContents = document.getElementsByClassName("tab-contents");
+
+    function openTab(tabName) {
+        for(tabLink of tabLinks) {
+            tabLink.classList.remove("active-link");
+        }
+        for(tabContent of tabContents) {
+            tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabName).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sideMenu = document.getElementById("sideMenu");
+
+    function openMenu() {
+        sideMenu.style.right = "0";
+    }
+    function closeMenu() {
+        sideMenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw8LqlRMKozIv2yOQsS7W8LncPd6fT52geUvVtgpKFLLboXjCUpVS7vtYUxtE2DXSUw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
